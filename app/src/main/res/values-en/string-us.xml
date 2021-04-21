@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppFacebook</string>
+    <string name="usert">Enter User</string>
+    <string name="passt">Enter Password</string>
+    <string name="botont">Login</string>
+    <string name="bienvenidat">Welcome Carlos</string>
+    <string name="item1t">Logout</string>
+    <string name="acerca">Creators</string>
+</resources>
