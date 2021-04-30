@@ -30,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
     public void abrirInterfaz(){
         SharedPreferences preferencias=getSharedPreferences("datos",
                                                    Context.MODE_PRIVATE );
-        Intent intent=null;
-        if(preferencias.getString("entrada",null).equals("SI")){
+
+        Intent intent=new Intent(getBaseContext(),LoginActivity.class);
+
+        if(preferencias.getString("entrada","").equals("SI")){
            intent=new Intent(getBaseContext(),WelcomeActivity.class);
         }
-        else if(preferencias.getString("entrada",null).equals("NO")){
-            intent=new Intent(getBaseContext(),LoginActivity.class);
-        }
+
 
         startActivity(intent);
         finishAffinity();
